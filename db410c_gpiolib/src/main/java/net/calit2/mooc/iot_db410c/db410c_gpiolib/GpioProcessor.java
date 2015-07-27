@@ -1,4 +1,4 @@
-package net.calit2.mooc.iot_db410c.dragonboard410c_gpiolibrary;
+package net.calit2.mooc.iot_db410c.db410c_gpiolib;
 
 /**
  * Created by Ara on 7/21/15.

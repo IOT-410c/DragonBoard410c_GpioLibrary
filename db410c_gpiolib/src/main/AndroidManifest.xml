@@ -2,7 +2,7 @@
     package="net.calit2.mooc.iot_db410c.dragonboard410c_gpiolibrary">
 
     <application android:allowBackup="true" android:label="@string/app_name"
-        android:icon="@mipmap/ic_launcher" android:theme="@style/AppTheme">
+        >
 
     </application>
 

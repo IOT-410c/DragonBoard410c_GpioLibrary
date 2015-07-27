@@ -1,4 +1,4 @@
-package net.calit2.mooc.iot_db410c.dragonboard410c_gpiolibrary;
+package net.calit2.mooc.iot_db410c.db410c_gpiolib;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
