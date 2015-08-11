@@ -21,6 +21,8 @@ public class GpioProcessor {
     public static final String TAG = "GpioProcessor";
 
     public class Gpio {
+        public static final int HIGH=1;
+        public static final int LOW=0;
         private int pin;
         private String PATH = "/sys/class/gpio";
 
@@ -100,12 +102,12 @@ public class GpioProcessor {
 
         /* sets pin high */
         public void high() {
-            setValue(1);
+            setValue(Gpio.HIGH);
         }
 
         /* sets pin low */
         public void low() {
-            setValue(0);
+            setValue(Gpio.LOW);
         }
 
         /* sets pin to output */
