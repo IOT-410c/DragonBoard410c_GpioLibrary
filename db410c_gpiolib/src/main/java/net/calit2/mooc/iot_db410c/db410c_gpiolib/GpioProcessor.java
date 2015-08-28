@@ -35,7 +35,6 @@ public class GpioProcessor {
             this.pin = pin;
         }
 
-
         private void setDirection(String direction) {
             Log.v(TAG,"Setting Direction");
             BufferedWriter out = null;
@@ -119,15 +118,9 @@ public class GpioProcessor {
         public void in() {
             setDirection("in");
         }
-
-
     }
 
-
-    public GpioProcessor() {
-
-    }
-
+    public GpioProcessor() {}
 
     public Gpio getPin(int pin) {
         return new Gpio(pin);
@@ -184,4 +177,22 @@ public class GpioProcessor {
         return new Gpio(935);
     }
 
+    public Gpio[] getAllPins() {
+        Gpio[] allPins = new Gpio[12];
+
+        allPins[0]  = getPin23();
+        allPins[1]  = getPin24();
+        allPins[2]  = getPin25();
+        allPins[3]  = getPin26();
+        allPins[4]  = getPin27();
+        allPins[5]  = getPin28();
+        allPins[6]  = getPin29();
+        allPins[7]  = getPin30();
+        allPins[8]  = getPin31();
+        allPins[9]  = getPin32();
+        allPins[10] = getPin33();
+        allPins[11] = getPin34();
+
+        return allPins;
+    }
 }
